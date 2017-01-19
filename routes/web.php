@@ -14,6 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/sobre', function () {
+    return view('avulsos/sobre');
+});
+Route::get('/carreira', function () {
+    return view('avulsos/carreira');
+});
+Route::get('/empresas', function () {
+    return view('avulsos/empresas');
+});
 
 Auth::routes();
 

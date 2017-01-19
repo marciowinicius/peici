@@ -55,8 +55,8 @@
             <div class="col-md-2 col-sm-6 paddingtop-bottom">
                 <h6 class="heading7">Links gerais</h6>
                 <ul class="footer-ul">
-                    <li><a href="#"> Career</a></li>
-                    <li><a href="#"> Privacy Policy</a></li>
+                    <li><a href="/carreira"> Carreira</a></li>
+                    <li><a href="/empresas"> Para empresas</a></li>
                     <li><a href="#"> Terms & Conditions</a></li>
                     <li><a href="#"> Client Gateway</a></li>
                     <li><a href="#"> Ranking</a></li>
@@ -88,7 +88,7 @@
             </div>
             <div class="col-md-6">
                 <ul class="bottom_ul">
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="/sobre">Sobre</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Faq's</a></li>
                     <li><a href="#">Contato</a></li>
