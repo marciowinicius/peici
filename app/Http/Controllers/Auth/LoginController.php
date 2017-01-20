@@ -27,6 +27,19 @@ class LoginController extends Controller
      */
     protected $redirectTo = '/home';
 
+//    protected function redirectPath()
+//    {
+//        if (User::where('tipo') == 'Aluno') {
+//            return redirect('/home');
+//        } elseif (User::where('tipo') == 'Professor') {
+//            return redirect('/home');
+//        } elseif (User::where('tipo') == 'Empresa') {
+//            return redirect('/home');
+//        } else {
+//            return redirect('/');
+//        }
+//    }
+
     /**
      * Create a new controller instance.
      *

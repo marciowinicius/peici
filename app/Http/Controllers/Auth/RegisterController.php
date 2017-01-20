@@ -27,7 +27,21 @@ class RegisterController extends Controller
      *
      * @var string
      */
+
     protected $redirectTo = '/home';
+
+//    protected function redirectPath()
+//    {
+//        if (User::where('tipo') == 'Aluno') {
+//            return redirect('/oloko');
+//        } elseif (User::where('tipo') == 'Professor') {
+//            return redirect('/home');
+//        } elseif (User::where('tipo') == 'Empresa') {
+//            return redirect('/home');
+//        } else {
+//            return redirect('/');
+//        }
+//    }
 
     /**
      * Create a new controller instance.
@@ -42,7 +56,7 @@ class RegisterController extends Controller
     /**
      * Get a validator for an incoming registration request.
      *
-     * @param  array  $data
+     * @param  array $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
@@ -51,13 +65,14 @@ class RegisterController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
             'password' => 'required|min:6|confirmed',
+            'tipo' => 'required',
         ]);
     }
 
     /**
      * Create a new user instance after a valid registration.
      *
-     * @param  array  $data
+     * @param  array $data
      * @return User
      */
     protected function create(array $data)
@@ -66,6 +81,7 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'tipo' => $data['tipo'],
         ]);
     }
 }

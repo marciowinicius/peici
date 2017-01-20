@@ -14,13 +14,13 @@
 
                 <div class="panel-body" style="text-align: center;">
                     <div class="panel-default">
-                        <a><button type="button" class="btn btn-success" style="padding: 11.5%; width: 100%;">Aluno</button></a>
+                        <a href="/register"><button type="button" class="btn btn-success" style="padding: 11.5%; width: 100%;">Aluno</button></a>
                     </div>
                     <div class="panel-default">
-                        <a><button type="button" class="btn btn-warning" style="padding: 10%; width: 100%;">Empresa</button></a>
+                        <a href="/register"><button type="button" class="btn btn-warning" style="padding: 10%; width: 100%;">Empresa</button></a>
                     </div>
                     <div class="panel-default">
-                        <a><button type="button" class="btn btn-danger" style="padding: 10%; width: 100%;">Professor</button></a>
+                        <a href="/register"><button type="button" class="btn btn-danger" style="padding: 10%; width: 100%;">Professor</button></a>
                     </div>
                 </div>
             </div>
